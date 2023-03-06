@@ -1,0 +1,83 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+.header {
+	display: flex;
+	height: 3em;
+	background-color: #4a4a4a;
+	justify-content: space-around;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	align-items: center;
+	opacity: 100%;
+}
+.header a {
+	color: #fff;
+	text-decoration: none;
+}
+
+.context-projects {
+	font-family: "Exo", sans-serif;
+	width: 100%;
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	grid-template: auto / auto auto;
+	flex-wrap: wrap;
+	margin: 5%;
+	gap: 5px;
+}
+@media (min-width: 500px) {
+	.wrapper {
+		display: grid;
+		grid-template: auto / auto auto auto;
+	}
+}
+@media (min-width: 1000px) {
+	.wrapper {
+		display: grid;
+		grid-template: auto / auto auto auto auto;
+	}
+}
+.content {
+	width: auto;
+	border: solid 1px;
+	border-color: #4a4a4a;
+	border-radius: 10px;
+}
+.content .text {
+	padding: 5px;
+}
+.content .img {
+	padding-top: 50%;
+	background-size: cover;
+	border-radius: 10px 10px 0px 0px;
+}
+.skill-table {
+	display: flex;
+	justify-content: center;
+}
+table {
+	background-color: #4a4a4a;
+	color: white;
+	width: 80%;
+	padding: 10px;
+	border-radius: 10px;
+}
+footer {
+	background-color: #4a4a4a;
+	color: white;
+	width: 100%;
+}
+/* tulities */
+
+.ezo{
+	font-family: "Exo", sans-serif;
+}
+
+
