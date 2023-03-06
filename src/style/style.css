@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap');
+
 * {
 	margin: 0px;
 	padding: 0px;
+}
+body {
+	width: 100%;
+	height: 100%;
 }
 .header {
 	display: flex;
@@ -61,6 +67,11 @@
 .skill-table {
 	display: flex;
 	justify-content: center;
+	font-family: 'Rajdhani', sans-serif;
+	font-size: 25px;
+}
+.skill-table ul {
+	list-style: url('/src/svg/corner-down-right.svg');
 }
 table {
 	background-color: #4a4a4a;
@@ -71,10 +82,11 @@ table {
 }
 footer {
 	display: flex;
-	justify-content: center;
+	align-items: center;
 	background-color: #4a4a4a;
 	color: white;
 	width: 100%;
+	height: 2em;
 }
 /* tulities */
 
