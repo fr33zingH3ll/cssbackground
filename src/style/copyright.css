@@ -18,10 +18,15 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
 	top: 50vh;
 }
 
-.context h1, p {
+.context h1 {
 	text-align: center;
 	color: #fff;
 	font-size: 50px;
+}
+.context p {
+	text-align: center;
+	color: #fff;
+	font-size: 30px;
 }
 
 .area {
