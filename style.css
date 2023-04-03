@@ -55,9 +55,6 @@ body {
 		display: grid;
 		grid-template: auto / repeat(2, 1fr);
 	}
-	.skill-table {
-		flex-direction: column;
-	}
 }
 @media (min-width: 1000px) {
 	.wrapper {
@@ -81,7 +78,7 @@ body {
 }
 .skill-table {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	margin: 5%;
 	gap: 20px;
