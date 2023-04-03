@@ -78,7 +78,7 @@ body {
 }
 .skill-table {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
 	margin: 5%;
 	gap: 20px;
