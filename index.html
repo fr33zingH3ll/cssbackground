@@ -6,6 +6,7 @@
 	<script src="https://unpkg.com/feather-icons"></script>
 
 	<link rel="stylesheet" href="style.css" />
+	<link rel="stylesheet" href="carousel.css">
 	<link rel="stylesheet" href="src/style/copyright.css" />
 
 	<title>PortFolio FreezingHell</title>
@@ -38,72 +39,74 @@
 		</div>
 		<br />
 		<div class="context-projects">
-			<a class="CV" >Mon CV</a>
+			<button class="CV" >Mon CV</button>
 			<h1>Mes Projets</h1>
 		</div>
-		<div class="wrapper">
-			<div class="content">
-				<div
-					class="img"
-					style="
-						background-image: url('src/img/manu-a-domicile-react.png');
-					"
-				></div>
-				<div class="text ezo">
-					<h1>Coiffeur à domicile</h1>
-					<p class="git"><a href="https://gitlab.com/freezing66/coiffeur-a-domicile/-/tree/master" target="_blank">gitlab</a></p>
-				</div>
-			</div>
-			<div class="content">
-				<div
-					class="img"
-					style="
-						background-image: url('src/img/Screenshot\ from\ 2022-09-08\ 08-36-36.png');
-					"
-				></div>
-				<div class="text ezo">
-					<h1>Printer d'affiche commercial</h1>
-					<p class="git"><a href="https://github.com/fr33zingH3ll/printers" target="_blank">github</a></p>
-				</div>
-			</div>
-			<div class="content">
-				<div
-					class="img"
-					style="
-						background-image: url('src/img/Screenshot\ from\ 2022-09-08\ 08-36-36.png');
-					"
-				></div>
-				<div class="text ezo">
-					<h1>Lecteur audio</h1>
-					<p class="git"><a href="https://gitlab.com/freezing66/audioplayer" target="_blank">gitlab</a></p>
-				</div>
-			</div>
-			<div class="content">
-				<div
-					class="img"
-					style="
-						background-image: url('src/img/Screenshot\ from\ 2022-09-08\ 08-36-36.png');
-					"
-				></div>
-				<div class="text ezo">
-					<h1>Matete symfony</h1>
-					<p class="git"><a href="https://gitlab.com/quoifeur/matete-symfony" target="_blank">gitlab</a></p>
-				</div>
-			</div>
-			<div class="content">
-				<div
-					class="img"
-					style="
-						background-image: url('src/img/Screenshot\ from\ 2022-09-08\ 08-36-36.png');
-					"
-				></div>
-				<div class="text ezo">
-					<h1>Satifact-calculator</h1>
-					<p class="git"><a href="https://gitlab.com/freezing66/satsicat-calculator" target="_blank">gitlab</a></p>
+		<div>
+			<div class="carousel">
+				<div class="carousel-inner">
+					<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+					<div class="carousel-item" style="background-image: url('src/img/manu-a-domicile-react.png');">
+						<div class="content text ezo">
+							<h1><a href="https://gitlab.com/freezing66/coiffeur-a-domicile/-/tree/master" target="_blank">Coiffeur à domicile</a></h1>
+						</div>
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item" style="background-image: url('src/img/Screenshot\ from\ 2022-09-08\ 08-36-36.png');">
+						<div class="content text ezo">
+							<h1><a href="https://github.com/fr33zingH3ll/printers" target="_blank">Printer d'affiche commercial</a></h1>
+						</div>
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item" style="background-image: url('src/img/manu-a-domicile-react.png');">
+						<div class="content text ezo">
+							<h1><a href="https://gitlab.com/freezing66/audioplayer" target="_blank">Lecteur audio</a></h1>
+						</div>
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item" style="background-image: url('src/img/manu-a-domicile-react.png');">
+						<div class="content text ezo">
+							<h1><a href="https://gitlab.com/quoifeur/matete-symfony" target="_blank">Matete Symfony</a></h1>
+						</div>
+					</div>
+					<input class="carousel-open" type="radio" id="carousel-5" name="carousel" aria-hidden="true" hidden="">
+					<div class="carousel-item" style="background-image: url('src/img/manu-a-domicile-react.png');">
+						<div class="content text ezo">
+							<h1><a href="https://gitlab.com/freezing66/satsicat-calculator" target="_blank">Satsicat-calculator</a></h1>
+						</div>
+					</div>
+
+					<label for="carousel-5" class="carousel-control prev control-1">‹</label>
+					<label for="carousel-2" class="carousel-control next control-1">›</label>
+					<label for="carousel-1" class="carousel-control prev control-2">‹</label>
+					<label for="carousel-3" class="carousel-control next control-2">›</label>
+					<label for="carousel-2" class="carousel-control prev control-3">‹</label>
+					<label for="carousel-4" class="carousel-control next control-3">›</label>
+					<label for="carousel-3" class="carousel-control prev control-4">‹</label>
+					<label for="carousel-5" class="carousel-control next control-4">›</label>
+					<label for="carousel-4" class="carousel-control prev control-5">‹</label>
+					<label for="carousel-1" class="carousel-control next control-5">›</label>
+					<ol class="carousel-indicators">
+						<li>
+							<label for="carousel-1" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-2" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-3" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-4" class="carousel-bullet">•</label>
+						</li>
+						<li>
+							<label for="carousel-5" class="carousel-bullet">•</label>
+						</li>
+					</ol>
 				</div>
 			</div>
 		</div>
-		<div class="skill-table" style="display: flex;flex-direction: column;">
+		<div class="skill-table">
 			<div class="skill">
 				<h1>Langages</h1>
 				<ul>
